@@ -2,10 +2,6 @@
 #fp1/fp2/c3/c4/p3/p4/o1/o2
 electrodes = ['fp1','fp2','c3','c4','p3','p4','o1','o2']
 #importing
-try :
-   import winsound
-except ImportError :
-   windsound = None
 import numpy as np
 import streamlit as st
 import time
@@ -32,7 +28,7 @@ signal = np.mean(data)
 st.title('status of the me....' )
 if signal > 35:
    st.subheader('I need help!!') 
-   winsound.Beep(500,2100) 
+   st.audio("allarm.mp3")  
 elif signal > 25 : 
    st.subheader('I am thisty🫗 ..')
 else :
