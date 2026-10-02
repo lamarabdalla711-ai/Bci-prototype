@@ -26,10 +26,10 @@ st.text(f'o2 : {o2}')
 signal = np.mean(data)
 #Estimation and operation
 st.title('status of the me....' )
-if signal > 35:
+if signal > 25:
    st.subheader('I need help!!') 
    st.audio("allarm.mp3")  
-elif signal > 25 : 
+elif signal > 15 : 
    st.subheader('I am thisty🫗 ..')
 else :
    st.subheader('I am fine..')    
