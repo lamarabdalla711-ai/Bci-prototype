@@ -2,7 +2,10 @@
 #fp1/fp2/c3/c4/p3/p4/o1/o2
 electrodes = ['fp1','fp2','c3','c4','p3','p4','o1','o2']
 #importing
-import winsound
+try :
+   import winsound
+except ImmportError :
+   windsound = None
 import numpy as np
 import streamlit as st
 import time
