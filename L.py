@@ -27,8 +27,8 @@ signal = np.mean(data)
 #Estimation and operation
 st.title('status of the me....' )
 if signal > 35:
-   st.subheader('I need help!!"mp3",autoplay=True) 
-   st.audio("allarm.mp3", format="audio/m)  
+   st.subheader("I need help!!") 
+   st.audio("allarm.mp3", format="audio/mp3",autoplay=True)  
 elif signal > 25 : 
    st.subheader('I am thisty🫗 ..')
 else :
